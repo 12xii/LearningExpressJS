@@ -46,5 +46,56 @@ Visual Studio Code 공식 사이트에서 설치
 
     b. `executionpolicy`를 입력 시 `unrestricted`가 뜬다면 다시 VS Code에서 실행해보자.
 
+### MySQL 설치
+
+MacOS는 `Homebrew`를 이용해 설치가 가능하지만, Windows의 경우 홈페이지에 직접 가서 설치가 필요하다. 
+
+Community 버전을 설치하도록 하자.
+
 ---
 
+## ExpressJS 설치
+
+```
+// Terminal
+
+npm i express
+
+// ...or npm install express
+```
+
+`added (NN) packages`로 시작하는 문장이 응답으로 돌아오면 성공적으로 설치된 것이다.
+
+---
+
+## ExpressJS 시작
+
+```
+npm init
+```
+
+패키지 이름, 버전, 설명, 시작 지점, test command 등을 물어보는 과정이 터미널에 등장한다. 
+입력하지 않고 엔터를 칠 경우 디폴트값으로 설정된다.
+모두 입력된 이후에는 Is this OK? 라며 다시 한 번 확인하는데, 이 경우 yes를 입력하거나 엔터를 칠 경우 다음 단계로 넘어가 자동 생성을 해준다.
+
+이제 `Hello World!`를 띄우는 서버를 간단히 만들어볼 것이다.
+
+|| HelloWorld 폴더를 참고하자!
+
+다음 코드는 http://localhost:3000 에 Hello World!를 표시하는 서버를 만든다. 어떻게 가능할까?
+
+!! 클론코딩과 주석 달기
+
+```
+const express = require('express')()
+
+const port = 3000
+
+express.get('/', (req, res) => {    
+        res.send('Hello World!') 
+})
+
+express.listen(port, () => { 
+  console.log(`Example app listening on port ${port}`)
+})
+```
