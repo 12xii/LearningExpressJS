@@ -50,6 +50,10 @@ Visual Studio Code 공식 사이트에서 설치
 
 MacOS는 `Homebrew`를 이용해 설치가 가능하지만, Windows의 경우 홈페이지에 직접 가서 설치가 필요하다. 
 
+다만 `Homebrew`를 이용해 설치하는 MacOS는 `Workbench`를 따로 설치해주어야 한다.
+
+GUI를 원한다면 `Workbench`를 따로 설치해두도록 하자.
+
 Community 버전을 설치하도록 하자.
 
 ---
