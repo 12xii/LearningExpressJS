@@ -49,7 +49,36 @@ const readWriting = async (req, res) => {
     }
 }
 
+const updateWriting = async (req, res) => {
+    const { writeID, writeHead, writeBody } = req.body;
+
+    try {
+        const thisWrite = await write.findOne({
+            where: { writeID },
+        })
+
+        if (!thisWrite) return res.status(404).json({
+            "message" : "존재하지 않는 글은 수정할 수 없습니다.",
+        })
+
+        await thisWrite.update({
+            writeHead,
+            writeBody,
+        })
+
+        return res.status(200).json({
+            "message" : "요청에 성공했습니다."
+        })
+    } catch (err) {
+        console.error(err);
+        return res.status(400).json({
+            "message" : "요청에 실패했습니다."
+        })
+    }
+}
+
 module.exports = {
     createWriting,
     readWriting,
+    updateWriting,
 }
