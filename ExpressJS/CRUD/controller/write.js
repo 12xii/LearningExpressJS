@@ -36,6 +36,10 @@ const readWriting = async (req, res) => {
             where : { writeID },
         })
 
+        if (!writed) return res.status(404).json({
+            "message" : "존재하지 않는 게시글입니다."
+        })
+
         return res.status(200).json({
             "message": "요청에 성공했습니다.",
             writed,
