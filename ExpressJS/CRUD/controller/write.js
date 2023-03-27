@@ -53,6 +53,31 @@ const readWriting = async (req, res) => {
     }
 }
 
+const deleteWriting = async (req, res) => {
+    const { writeID } = req.body;
+
+    try {
+        const thisWrite = await write.findOne({
+            where: { writeID }
+        })
+
+        if (!writeID) return res.status(404).json({
+            "message" : "존재하지 않는 게시글을 삭제할 수 없습니다."
+        })
+
+        await thisWrite.destroy({
+            where : {writeID},
+        })
+
+        return res.status(204).json({});
+    } catch (err) {
+        console.error(err);
+        return res.status(400).json({
+            "message" : "요청에 실패했습니다."
+        })
+    }
+}
+
 const updateWriting = async (req, res) => {
     const { writeID, writeHead, writeBody } = req.body;
 
@@ -85,4 +110,5 @@ module.exports = {
     createWriting,
     readWriting,
     updateWriting,
+    deleteWriting,
 }
