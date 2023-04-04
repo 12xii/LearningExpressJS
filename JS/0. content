@@ -1,0 +1,61 @@
+#목차
+
+---
+
+##JavaScript
+
+    ㄴ 출력
+
+    ㄴ JS
+
+        ㄴ JS의 언어적 특징
+
+        ㄴ JS와 C의 차이
+
+        ㄴ JS의 장단점
+    
+    ㄴ const / let / var
+
+        ㄴ 선언자의 차이
+
+        ㄴ 자료형
+
+    ㄴ 객체와 객체지향의 이해
+
+    ㄴ 형변환
+
+    ㄴ 연산자
+
+    ㄴ 조건 / 반복문
+
+    ㄴ 함수 선언과 호출
+
+        ㄴ 화살표 함수
+
+        ㄴ 선언식
+    
+    ㄴ 내장함수
+
+    ㄴ 모듈과 CRUD
+
+---
+
+##기본지식
+
+    ㄴ HTTP / HTTPS
+
+    ㄴ URI / URL / URN
+
+    ㄴ RDB / RDBMS + MySQL
+
+    ㄴ Method & RestAPI
+
+    ㄴ NodeJS / ExpressJS
+
+---
+
+##이외
+
+    ㄴ Java & SpringBoot
+
+    ㄴ TypeScript & NestJS
