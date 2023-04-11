@@ -12,9 +12,11 @@ Refer : MDN ; Mozilla Developer Network
 
 ## 공부 순서
 
-    JS -> ExpressJS
-            ㄴ> HelloWorld -> Controllers -> Routing 
-                -> LinkingDB -> CRUD -> Package
+각 폴더 안의 마크다운파일 ( `*.md` ) 을 먼저 읽어주세요.
+
+    JS          -> ExpressJS
+                    ㄴ> HelloWorld -> Controllers -> Routing 
+                        -> LinkingDB -> CRUD -> Package
 
 ---
 
