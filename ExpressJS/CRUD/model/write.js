@@ -3,8 +3,9 @@ const sequelize = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
     return sequelize.define(("Write"), {
         writeID: {
-            type: DataTypes.STRING(),
+            type: DataTypes.INTEGER(),
             primaryKey: true,
+            autoIncrement: true,
         },
         writeUser: {
             type: DataTypes.STRING(),

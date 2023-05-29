@@ -1,4 +1,4 @@
-const write = require('../model').write;
+const { write } = require('../model');
 
 const createWriting = async (req, res) => {
     const { writeID, writeHead, writeBody, writeUser } = req.body;
